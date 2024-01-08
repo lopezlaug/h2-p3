@@ -5,28 +5,139 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <link
+            rel="icon"
+            type="image/svg"
+            href="./assets/images/ball-dark.svg"
+        />
+        <link
             rel="stylesheet"
             type="text/css"
             href="./assets/styles/main.scss"
         />
         <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <title>AMATEUR TENIS</title>
     </head>
     <body>
-        <div class="uoc-container">
-            <!-- <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture> -->
-            <h1 class="uoc-title">Hola PEC3</h1>
-            <p>
-                Aprender mucho sobre Atomic CSS - Librería de utilidades:
-                Tailwind
-            </p>
-        </div>
+        <div
+            class="w-full max-w-screen-lg mx-auto max-[999px]:max-w-screen-md max-[850px]:max-w-screen-sm max-[640px]:max-w-[400px] max-[399px]:max-w-[355px]"
+        >
+            <include src="./views/menu.html"></include>
+            <include src="./views/heroheader.html"></include>
 
-        <include src="./views/footer.html"></include>
+            <div
+                class="mr-[80px] ml-[80px] max-[850px]:mr-[20px] max-[850px]:ml-[20px] max-[640px]:mr-[20px] max-[640px]:ml-[20px]"
+            >
+                <div
+                    class="flex items-center mt-[20px] mb-[40px] max-[640px]:flex-col"
+                >
+                    <div
+                        class="text-lg font-semibold mr-[40px] max-[640px]:mr-[0px]"
+                    >
+                        Mario y Juan, amigos desde el colegio, empezaron a
+                        retomar su pasión por el deporte del tenis,
+                    </div>
+                    <div>
+                        hace un par de años, quedando algunas tardes en las
+                        canchas municipales de su barrio. Poco a poco se ha ido
+                        formando en un interesante grupo de amigos deportistas
+                        con ganas de competir y socializar.
+                    </div>
+                </div>
+
+                <div
+                    class="border-t border-darkblue mt-5 border-b border-darkblue mt-3 mb-5"
+                >
+                    <h4 class="text-2xl font-medium">
+                        Beneficios de jugar al tenis
+                    </h4>
+                    <div class="list-decimal">
+                        <li class="font-semibold">Hacer nuevos amigos</li>
+                        <p class="ml-[20px] mb-[20px]">
+                            Algunas personas encuentran nuevos amigos a cada
+                            paso, mientras que otras no son tan buenas en eso, y
+                            la buena noticia es que la capacitación puede ser un
+                            lugar perfecto para hablar con personas con los
+                            mismos intereses que tú. Por otro lado, también es
+                            una forma perfecta de mejorar las relaciones con
+                            viejos amigos si tienen la misma afición que tú, ya
+                            que podéis hacer ejercicio juntos y pasar un rato
+                            agradable haciendo algo que os guste
+                        </p>
+
+                        <li class="font-semibold">
+                            Es más fácil encontrar gente con quien jugar.
+                        </li>
+                        <p class="ml-[20px] mb-[20px]">
+                            Aunque el tenis es un deporte individual y no
+                            necesitamos pedir a muchos amigos que jueguen con
+                            nosotros como lo haríamos si elegimos fútbol, ​​por
+                            ejemplo, no es posible practicar solo, y
+                            necesitaremos al menos una persona si queremos tener
+                            un entrenamiento exitoso .
+                        </p>
+
+                        <li class="font-semibold">Mejorar la salud general</li>
+                        <p class="ml-[20px] mb-[15px]">
+                            Elegir el tenis como pasatiempo tendrá un impacto
+                            positivo en nuestra salud y en nuestro ser en
+                            general. En primer lugar, puede ayudarnos a
+                            mantenernos en forma y mejorar nuestros reflejos
+                            porque este entrenamiento puede ser bastante difícil
+                            y requiere ciertas habilidades. Además de eso,
+                            también es perfecto para nuestra salud mental ya que
+                            hacer ejercicio reduce el nivel de estrés y nos
+                            ayuda a sentirnos mejor.
+                        </p>
+                    </div>
+                </div>
+
+                <blockquote class="quote">
+                    <p>
+                        "Lo básico es creer en ti e intentar dar lo mejor de uno
+                        mismo cada día."<br />
+                        - Rafa Nadal. -
+                    </p>
+                </blockquote>
+
+                <p class="mb-[20px]">
+                    Esta liga nació de la pasión por el tenis, las ganas de
+                    pasar tiempo con amigos y hacer deporte.
+                </p>
+
+                <figure class="text-center mb-[20px]">
+                    <div class="flex justify-center items-center">
+                        <img
+                            src="./assets/images/tenis-fun.jpg"
+                            alt="Tenista entusiasmado jugando al tenis."
+                            width="600px"
+                        />
+                    </div>
+
+                    <figcaption>
+                        Sergio Gómez jugando en la liga de verano 2023 |
+                        @AmateurTenis
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Tenemos como misión adicional divulgar la idea de que el
+                    tenis puede ser accesible para todos y no solo como un
+                    deporte de elite. Tenemos en mente fundar un liga con
+                    Amateur Tenis para niños y adolescentes en el futuro
+                    próximo.
+                </p>
+
+                <div
+                    class="flex justify-center items-center mt-[20px] mb-[30px]"
+                >
+                    <button class="btn-primary" id="celebrate-tenis">
+                        !Celebra el tenis!
+                    </button>
+                </div>
+            </div>
+
+            <include src="./views/footer.html"></include>
+        </div>
         <script type="module" src="./assets/scripts/main.js"></script>
-        <!-- do not remove this line! -->
     </body>
 </html>

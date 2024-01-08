@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="icon"
+            type="image/svg"
+            href="./assets/images/ball-dark.svg"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+
+        <!-- do not remove this line! -->
+        <title>AMATEUR TENIS</title>
+    </head>
+    <body>
+        <div
+            class="w-full max-w-screen-lg mx-auto max-[999px]:max-w-screen-md max-[850px]:max-w-screen-sm max-[640px]:max-w-[355px]"
+        >
+            <include src="./views/menu.html"></include>
+            <h1
+                class="text-center text-[32px] font-sansbold font-extrabold p-[20px]"
+            >
+                Miembros destacados
+            </h1>
+            <div
+                class="grid grid-cols-3 gap-[10px] p-[10px] bg-lightgrey max-[850px]:grid-cols-2 max-[640px]:grid-cols-1"
+            >
+                <include
+                    src="./views/membercard.html"
+                    locals='{"name":"Mario Martín",
+                            "foto": "./assets/images/m1.jpg",
+                            "description": "Miembro cofundador. Exdeportista profesional de tenis, Mario ha mantenido viva su pasión por este deporte, co-fundando la liga de tenis para aficionados, Amateur Tenis."
+                        }'
+                ></include>
+
+                <include
+                    src="./views/membercard.html"
+                    locals='{"name":"Juan Medina",
+                            "foto": "./assets/images/m2.jpg",
+                            "description": "Profesor de Educación física y gran aficionado al tenis, habiendo jugado a este deporte desde los 12 años, es cofundador de la liga junto a Mario."
+                        }'
+                ></include>
+
+                <include
+                    src="./views/membercard.html"
+                    locals='{"name":"Sara Peréz",
+                            "foto": "./assets/images/m3.jpg",
+                            "description": "Entusiasta del tenis desde una edad temprana, Sara ha ganado varias ligas femeninas amateur con anterioridad, ahora juega en el Amateur Tenis."
+                        }'
+                ></include>
+
+                <include
+                    src="./views/membercard.html"
+                    locals='{"name":"Marta López",
+                            "foto": "./assets/images/m4.jpg",
+                            "description": "Profesora de yoga a tiempo completo, Marta empezó a practicar tenis hace unos años, se ha vuelto una entusiasta del deporte, y juega ahora en nuestra liga."
+                        }'
+                ></include>
+
+                <include
+                    src="./views/membercard.html"
+                    locals='{"name":"Sergio Gómez",
+                            "foto": "./assets/images/m5.jpg",
+                            "description": "Profesor de lengua Inglesa en el colegio local, Sergio combina su trabajo con su hobby favorito, el tenis."
+                        }'
+                ></include>
+
+                <include
+                    src="./views/membercard.html"
+                    locals='{"name":"Andrea García",
+                            "foto": "./assets/images/m6.jpg",
+                            "description": "Estudiante de máster en docencia, Andrea combina sus estudios con su hobby favorito desde la niñez, jugar al tenis."
+                        }'
+                ></include>
+            </div>
+            <include src="./views/footer.html"></include>
+        </div>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col text-center">columna1</div>
+                <div class="col text-center">columna2</div>
+            </div>
+        </div> -->
+
+        <script type="module" src="./assets/scripts/main.js"></script>
+    </body>
+</html>

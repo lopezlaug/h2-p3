@@ -1,12 +1,10 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+// $font-family-sansbold: "Poppins", sans-serif;
+// $font-family-sans: "Work Sans", sans-serif;
 
-$uoc-corporate: #007810;
-$uoc-masterbrand: #9bff73;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+// $uoc-corporate: black;
+// $uoc-masterbrand: white;
+// $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
-$mqMinWidth: 420px;
+// $mqMinWidth: 420px;
